@@ -12,15 +12,15 @@ It allows users to input house details and get an estimated sale price using a t
 
 ## Project Structure
 house-price-predictor/
-│
-├── app.py # Streamlit app
-├── house_price_pipeline.pkl # Pickled trained pipeline
-├── price.csv # Original house price dataset
-├── train.csv # Training dataset
-├── test.csv # Testing dataset
-├── new_house_data.csv # Example input for predictions
-├── README.md # Project documentation
-└── requirements.txt # Required Python packages
+app.py # Streamlit app
+house_price_pipeline.pkl # Pickled trained pipeline
+price.csv # Original house price dataset
+train.csv # Training dataset
+test.csv # Testing dataset
+new_house_data.csv # Example input for predictions
+README.md # Project documentation
+requirements.txt # Required Python packages
+screenshots/
 
 ## How to Run
 
@@ -41,4 +41,5 @@ house-price-predictor/
 
 ## App Link
 
-You can try the live app here: [House Price Predictor](https://share.streamlit.io/yourusername/house-price-predictor/main/app.py)
+You can try the live app here: [House Price Predictor]
+<"https://housepredictionmode.streamlit.app/">
