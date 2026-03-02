@@ -1,0 +1,95 @@
+MSSubClass-no of stories num of floor, BldgType,HouseStyle
+LotArea-plot area sq feet
+OverallQual OverallCond Foundation
+MSZoning-catagorised area (its housing so remove Commercial)
+Street -kchhi pakki
+Utilities Neighborhood Condition1 Condition2 = facilities
+GrLivArea +Basementarea=contsructed area
+BsmtFullBath BsmtHalfBath+ FullBath+ HalfBath=num of washrooms
+TotRmsAbvGrd
+SalePrice
+
+# MSSubClass   : घर का प्रकार और कितनी मंज़िलें (1-story, 2-story, आदि)
+# MSZoning     : ज़ोनिंग क्लासिफिकेशन (RL = Low Density, RH = High Density, C = Commercial)
+# LotFrontage  : सड़क से जुड़ा सामने का हिस्सा (width in feet)
+# LotArea      : पूरे प्लॉट का क्षेत्रफल (घर + बगीचा + खाली जगह)
+# Street       : सड़क का प्रकार (Pave = पक्की, Grvl = कच्ची)
+# Alley        : पीछे/बगल की गली (Pave, Grvl, या NA = नहीं है)
+# LotShape     : प्लॉट का आकार (Reg = आयताकार, IR1/IR2/IR3 = अनियमित)
+# LandContour  : ज़मीन का लेवल (Lvl = सपाट, Bnk = ऊँची, HLS = ढलान, Low = नीची)
+# Utilities    : बेसिक सुविधाएँ (AllPub = पानी, बिजली, गैस, सीवेज सब हैं)
+# LotConfig    : प्लॉट सड़क से कैसे जुड़ा है (Inside, Corner, CulDSac, FR2, FR3)
+# LandSlope    : ज़मीन की ढलान (Gtl = हल्की, Mod = मध्यम, Sev = तेज़)
+# Neighborhood : घर किस मोहल्ले/इलाके में है (NAmes, OldTown, CollgCr, आदि)
+# Condition1   : घर के पास सड़क/रेलवे/पार्क (Norm, Artery, Feedr, RR, PosN, PosA)
+# Condition2   : दूसरी सड़क/रेलवे/लोकेशन (अक्सर Norm)
+# BldgType     : बिल्डिंग का प्रकार (1Fam = Single-family, 2FmCon = Duplex, Twnhs = Townhouse)
+# HouseStyle   : घर की शैली (1Story, 2Story, 1.5Fin, SLvl, आदि)
+# OverallQual  : घर की कुल गुणवत्ता (1 = बहुत खराब, 10 = बहुत अच्छी)
+# OverallCond  : घर की कुल स्थिति (1 = खराब, 10 = बहुत अच्छी)
+# YearBuilt    : घर कब बना
+# YearRemodAdd : घर कब रीमॉडल/एडिशन हुआ
+# RoofStyle    : छत का प्रकार (Gable, Hip, Flat, Shed, आदि)
+# RoofMatl     : छत की सामग्री (CompShg, Tar&Grv, Metal, आदि)
+# Exterior1st  : बाहर की दीवार की सामग्री (VinylSd, HdBoard, BrkFace, आदि)
+# Exterior2nd  : दूसरी बाहरी सामग्री (कभी mix होती है)
+# MasVnrType   : Masonry veneer का प्रकार (BrkFace, Stone, None)
+# MasVnrArea   : Masonry veneer का क्षेत्रफल (sq ft)
+# ExterQual    : बाहरी गुणवत्ता (Ex, Gd, TA, Fa, Po)
+# ExterCond    : बाहरी स्थिति (Ex, Gd, TA, Fa, Po)
+# Foundation   : नींव का प्रकार (PConc, CBlock, BrkTil, Slab, आदि)
+# BsmtQual     : बेसमेंट की गुणवत्ता (Ex, Gd, TA, Fa, Po, NA)
+# BsmtCond     : बेसमेंट की स्थिति (Ex, Gd, TA, Fa, Po, NA)
+# BsmtExposure : बेसमेंट में वेंट/खिड़की (Gd, Av, Mn, No, NA)
+# BsmtFinType1 : बेसमेंट का पहला फिनिश प्रकार (GLQ, ALQ, BLQ, Rec, LwQ, Unf, NA)
+# BsmtFinSF1   : बेसमेंट का पहला फिनिश क्षेत्रफल (sq ft)
+# BsmtFinType2 : बेसमेंट का दूसरा फिनिश प्रकार
+# BsmtFinSF2   : बेसमेंट का दूसरा फिनिश क्षेत्रफल
+# BsmtUnfSF    : बेसमेंट का अनफिनिश क्षेत्रफल
+# TotalBsmtSF  : बेसमेंट का कुल क्षेत्रफल
+# Heating      : हीटिंग सिस्टम का प्रकार (GasA, GasW, Grav, Wall, आदि)
+# HeatingQC    : हीटिंग की गुणवत्ता/स्थिति (Ex, Gd, TA, Fa, Po)
+# CentralAir   : Central AC है या नहीं (Y/N)
+# Electrical   : इलेक्ट्रिकल सिस्टम (SBrkr, FuseA, FuseF, FuseP, Mix)
+# 1stFlrSF     : पहली मंज़िल का क्षेत्रफल (sq ft)
+# 2ndFlrSF     : दूसरी मंज़िल का क्षेत्रफल (sq ft)
+# LowQualFinSF : कम गुणवत्ता वाला फिनिश क्षेत्रफल
+# GrLivArea    : Above ground रहने का क्षेत्रफल (sq ft)
+# BsmtFullBath : बेसमेंट में फुल बाथरूम
+# BsmtHalfBath : बेसमेंट में हाफ बाथरूम
+# FullBath     : ऊपर फुल बाथरूम
+# HalfBath     : ऊपर हाफ बाथरूम
+# BedroomAbvGr : ऊपर बेडरूम की संख्या
+# KitchenAbvGr : ऊपर किचन की संख्या
+# KitchenQual  : किचन की गुणवत्ता (Ex, Gd, TA, Fa, Po)
+# TotRmsAbvGrd : ऊपर कुल कमरे (बाथरूम छोड़कर)
+# Functional   : घर की कार्यक्षमता (Typ, Min1, Min2, Mod, Maj1, Maj2, Sev, Sal)
+# Fireplaces   : फायरप्लेस की संख्या
+# FireplaceQu  : फायरप्लेस की गुणवत्ता (Ex, Gd, TA, Fa, Po, NA)
+# GarageType   : गैराज का प्रकार (Attchd, Detchd, BuiltIn, CarPort, NA)
+# GarageYrBlt  : गैराज कब बना
+# GarageFinish : गैराज का फिनिश (Fin, RFn, Unf, NA)
+# GarageCars   : गैराज में कितनी गाड़ियाँ आ सकती हैं
+# GarageArea   : गैराज का क्षेत्रफल (sq ft)
+# GarageQual   : गैराज की गुणवत्ता (Ex, Gd, TA, Fa, Po, NA)
+# GarageCond   : गैराज की स्थिति (Ex, Gd, TA, Fa, Po, NA)
+# PavedDrive   : पक्की ड्राइववे है या नहीं (Y, P, N)
+# WoodDeckSF   : लकड़ी के डेक का क्षेत्रफल (sq ft)
+# OpenPorchSF  : खुली पोर्च का क्षेत्रफल
+# EnclosedPorch: बंद पोर्च का क्षेत्रफल
+# 3SsnPorch    : 3-season पोर्च का क्षेत्रफल
+# ScreenPorch  : स्क्रीन पोर्च का क्षेत्रफल
+# PoolArea     : पूल का क्षेत्रफल (sq ft)
+# PoolQC       : पूल की गुणवत्ता (Ex, Gd, TA, Fa, NA)
+# Fence        : फेंस का प्रकार (GdPrv, MnPrv, GdWo, MnWw, NA)
+# MiscFeature  : अन्य फीचर (Elev, TenC, Gar2, Shed, NA)
+# MiscVal      : अन्य फीचर का मूल्य ($)
+# MoSold       : घर किस महीने में बिका
+# YrSold       : घर किस साल में बिका
+# SaleType     : बिक्री का प्रकार (WD = Warranty Deed, New, COD, ConLD, आदि)
+# SaleCondition: बिक्री की स्थिति (Normal, Abnorml, AdjLand, Alloca, Family, Partial)
+# SalePrice    : घर की बिक्री कीमत ($)
+
+# ==============================
+# कुल ~80 कॉलम का सारांश पूरा
+# ==============================
